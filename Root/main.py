@@ -11,7 +11,8 @@ def get_cpu_choice():
 
 def get_player_choice():
     while True:
-        player_choice = input("Enter rock, paper, or scissors: ").lower()
+        player_choice = input("Enter rock, paper, or scissors: ")
+        player_choice = player_choice.lower()
         if player_choice in ["rock", "paper", "scissors"]:
             return player_choice
         else:
